@@ -6,7 +6,7 @@ With this extention you will be able to upload multiple attachments at once when
 
 **Prerequisites**
 
-- Znuny4OTRS-Repo
+- [http://znuny.com/#!/znuny4otrs](Znuny4OTRS-Repo)
 
 - OTRS 3.1
 
