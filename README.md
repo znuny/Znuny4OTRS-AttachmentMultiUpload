@@ -8,8 +8,6 @@ With this extention you will be able to upload multiple attachments at once when
 
 - Znuny4OTRS-Repo
 
-- OTRS 3.0
-
 - OTRS 3.1
 
 - OTRS 3.2
