@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="1.0" init="Application">
+    <ConfigItem Name="Ticket::CustomModule###000-Znuny4OTRSAttachmentMultiUpload" Required="1" Valid="1">
+        <Description Translatable="1">Overloads (redefines) existing functions in Kernel::System::Web::Request and Kernel::System::Web::UploadCache to allow the upload of multiple attachments at once.</Description>
+        <Group>Znuny4OTRS-AttachmentMultiUpload</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <String Regex="">Kernel::System::Znuny4OTRSAttachmentMultiUpload</String>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Frontend::Output::FilterElementPost###Znuny4OTRSAttachmentMultiUpload" Required="0" Valid="1">
+        <Description Translatable="1">This configuration registers an OutputFilter to add multiple="multiple" to input file_upload and FileUpload fields.</Description>
+        <Group>Znuny4OTRS-AttachmentMultiUpload</Group>
+        <SubGroup>Core::Web</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::OutputFilterPostZnuny4OTRSAttachmentMultiUpload</Item>
+                <Item Key="Templates">
+                    <Hash>
+                        <Item Key="ALL">1</Item>
+                    </Hash>
+                </Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+</otrs_config>
