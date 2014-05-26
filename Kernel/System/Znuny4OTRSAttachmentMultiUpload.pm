@@ -27,25 +27,25 @@ gets file upload data.
         Content     => 'Some text',
     );
 
-	OR in case of a multi upload in file_upload or FileUpload fields:
+    OR in case of a multi upload in file_upload or FileUpload fields:
 
-	(
+    (
         Multiple => 3,
         1        => {
-	        Filename    => 'abc.txt',
-	        ContentType => 'text/plain',
-	        Content     => 'Some text',
-		},
-		2        => {
-	        Filename    => 'abc.txt',
-	        ContentType => 'text/plain',
-	        Content     => 'Some text',
-		},
-		3        => {
-	        Filename    => 'abc.txt',
-	        ContentType => 'text/plain',
-	        Content     => 'Some text',
-		},
+            Filename    => 'abc.txt',
+            ContentType => 'text/plain',
+            Content     => 'Some text',
+        },
+        2        => {
+            Filename    => 'abc.txt',
+            ContentType => 'text/plain',
+            Content     => 'Some text',
+        },
+        3        => {
+            Filename    => 'abc.txt',
+            ContentType => 'text/plain',
+            Content     => 'Some text',
+        },
     );
 
     If you send Source => 'string', the data will be returned directly in
@@ -71,7 +71,7 @@ sub Kernel::System::Web::Request::GetUploadAll {
 
     my @Attachments = $Self->GetArray( Param => $Param{Param}, Raw => 1 );
     if ( !scalar @Attachments ) {
-        @Attachments = ('unkown');
+        @Attachments = ('unknown');
     }
 
     my %ReturnData;
@@ -88,34 +88,10 @@ sub Kernel::System::Web::Request::GetUploadAll {
 
         # return a string
         my $Content;
-        if ( $Param{Source} && lc $Param{Source} eq 'string' ) {
-
-            while (<$Attachment>) {
-                $Content .= $_;
-            }
-            close $Attachment;
+        while (<$Attachment>) {
+            $Content .= $_;
         }
-
-        # return file location in file system
-        else {
-
-            # delete upload dir if exists
-            my $Path = "/tmp/$$";
-            if ( -d $Path ) {
-                File::Path::remove_tree($Path);
-            }
-
-            # create upload dir
-            File::Path::make_path( $Path, { mode => 0700 } );    ## no critic
-
-            $Content = "$Path/$NewFileName";
-
-            open my $Out, '>', $Content || die $!;               ## no critic
-            while (<$Attachment>) {
-                print $Out $_;
-            }
-            close $Out;
-        }
+        close $Attachment;
 
         # Check if content is there, IE is always sending file uploads without content.
         return          if !$Content && !$Multiple;
