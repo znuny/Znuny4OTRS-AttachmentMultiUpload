@@ -25,11 +25,14 @@ sub Run {
     return if !defined $Param{Data};
 
     ${ $Param{Data} } =~ s{
-        (<input[^>]+name="(?:FileUpload|file_upload)"[^>]+)((?:\/)?>)
+        (<input[^>]+name="(?:FileUpload|file_upload)"[^>]+)>
     }
     {
         my $Start = $1;
-        my $End   = $2;
+        my $End   = '/>';
+
+        $Start =~ s{/\z}{};
+
         if ( $Start !~ /multiple/i ) {
             $Start . ' multiple="multiple"' . $End;
         }
