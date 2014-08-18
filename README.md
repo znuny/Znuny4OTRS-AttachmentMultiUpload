@@ -14,10 +14,6 @@ With this extention you will be able to upload multiple attachments at once when
 
 - OTRS 3.3
 
-**Known Issues**
-
-- Not compatible with KIX4OTRS ( KIX4OTRSITSMIncidentProblem )
-
 **Installation**
 
 Download the package and install it via admin interface -> package manager or use Znuny4OTRS-Repo.
