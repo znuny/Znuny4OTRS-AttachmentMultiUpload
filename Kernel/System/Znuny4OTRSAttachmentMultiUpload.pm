@@ -56,6 +56,7 @@ gets file upload data.
 
 sub Kernel::System::Web::Request::GetUploadAll {
     my ( $Self, %Param ) = @_;
+    my $EncodeObject = $Kernel::OM->Get('Kernel::System::Encode');
 
     # get upload
     my @Upload = $Self->{Query}->upload( $Param{Param} );
@@ -80,7 +81,8 @@ sub Kernel::System::Web::Request::GetUploadAll {
     for my $Attachment ( @Attachments ) {
 
         my $NewFileName = "$Attachment";    # use "" to get filename of anony. object
-        $Self->{EncodeObject}->EncodeInput( \$NewFileName );
+        
+        $EncodeObject->EncodeInput( \$NewFileName );
 
         # replace all devices like c: or d: and dirs for IE!
         $NewFileName =~ s/.:\\(.*)/$1/g;
