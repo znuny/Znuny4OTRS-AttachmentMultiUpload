@@ -1,6 +1,9 @@
 # --
 # Kernel/System/Web/UploadCache.pm - a fs upload cache
-# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
+# Copyright (C) 2012-2015 Znuny GmbH, http://znuny.com/
+# --
+# $origin: https://github.com/OTRS/otrs/blob/e505154f2bfb3be8b817d8a02e36d7cd1aaf3420/Kernel/System/Web/UploadCache.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -125,7 +128,9 @@ Multiple files can be uploaded via the 'Multiple' paramter
     );
 # ---
 =cut
+
 sub FormIDAddFile {
+
 # ---
 # Znuny4OTRS-AttachmentMultiUpload
 # ---
@@ -143,15 +148,15 @@ sub FormIDAddFile {
         # otherwise we got a multi upload so we need to check
         # how many files were uploaded and loop over each of them
         # to add it to the form
-        for my $UploadID ( 1..$Param{Multiple} ) {
+        for my $UploadID ( 1 .. $Param{Multiple} ) {
             my $Added = $Self->{Backend}->FormIDAddFile(
                 FormID => $Param{FormID},
-                %{ $Param{ $UploadID } },
+                %{ $Param{$UploadID} },
             );
 
             # in case of an error, log it but keep loading files up
             if ( !$Added ) {
-                my $AttachmentName = $Param{ $UploadID }->{Filename};
+                my $AttachmentName = $Param{$UploadID}->{Filename};
 
                 $Self->{LogObject}->Log(
                     Priority => 'error',

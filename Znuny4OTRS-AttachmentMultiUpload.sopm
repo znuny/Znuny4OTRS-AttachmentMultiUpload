@@ -2,13 +2,13 @@
 <otrs_package version="1.1">
     <Name>Znuny4OTRS-AttachmentMultiUpload</Name>
     <Version>2.2.0</Version>
+    <Framework>4.0.x</Framework>
+    <PackageRequired Version="2.0.2">Znuny4OTRS-Repo</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">This package adds the functionality to upload multiple attachments at once when using a modern HTML5 browser.</Description>
     <Description Lang="de">Dieses Paket fügt die Funktionalität hinzu um mehrere Anhänge gleichzeitig hochzuladen, wenn ein morderner HTML5 Browser verwendet wird.</Description>
-    <Framework>4.0.x</Framework>
-    <PackageRequired Version="2.0.2">Znuny4OTRS-Repo</PackageRequired>
     <Filelist>
         <File Location="Custom/Kernel/System/Web/UploadCache.pm" Permission="644"/>
         <File Location="Kernel/Config/Files/Znuny4OTRSAttachmentMultiUpload.xml" Permission="644"/>
