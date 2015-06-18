@@ -21,6 +21,7 @@
                         <Item Key="AgentTicketPhone">1</Item>
                         <Item Key="AgentTicketCompose">1</Item>
                         <Item Key="AgentTicketActionCommon">1</Item>
+                        <Item Key="CustomerTicketMessage">1</Item>
                     </Hash>
                 </Item>
             </Hash>
