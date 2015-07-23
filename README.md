@@ -14,7 +14,7 @@ With this extention you will be able to upload multiple attachments at once when
 
 - OTRS 3.3
 
-- OTRS 4.0 (master branch)
+- OTRS 4.0
 
 **Installation**
 
