@@ -1,5 +1,6 @@
 # --
 # Kernel/System/Znuny4OTRSAttachmentMultiUpload.pm - allows the upload of multiple attachments at once via redefining functions
+# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # Copyright (C) 2014 Znuny GmbH, http://znuny.com/
 # --
 
