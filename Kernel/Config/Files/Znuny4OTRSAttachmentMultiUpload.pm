@@ -68,12 +68,12 @@ gets file upload data.
         my $EncodeObject = $Kernel::OM->Get('Kernel::System::Encode');
 
         # get upload
-        my @UploadDataload = $Self->{Query}->upload( $Param{Param} );
-        return if !scalar @UploadDataload;
+        my @Upload = $Self->{Query}->upload( $Param{Param} );
+        return if !scalar @Upload;
 
         my $Multiple = 0;
         if (
-            scalar @UploadDataload > 1
+            scalar @Upload > 1
             && grep { $Param{Param} eq $_ } qw( file_upload FileUpload )
             )
         {
