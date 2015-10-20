@@ -13,9 +13,9 @@
     <Description Lang="en">This package adds the functionality to upload multiple attachments at once when using a modern HTML5 browser.</Description>
     <Description Lang="de">Dieses Paket fügt die Funktionalität hinzu um mehrere Anhänge gleichzeitig hochzuladen, wenn ein morderner HTML5 Browser verwendet wird.</Description>
     <Filelist>
-        <File Location="Custom/Kernel/System/Web/UploadCache.pm" Permission="644"/>
-        <File Location="Kernel/Config/Files/Znuny4OTRSAttachmentMultiUpload.xml" Permission="644"/>
-        <File Location="Kernel/Output/HTML/OutputFilterPostZnuny4OTRSAttachmentMultiUpload.pm" Permission="644"/>
-        <File Location="Kernel/System/Znuny4OTRSAttachmentMultiUpload.pm" Permission="644"/>
+        <File Permission="644" Location="Custom/Kernel/System/Web/UploadCache.pm"/>
+        <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRSAttachmentMultiUpload.xml"/>
+        <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRSAttachmentMultiUpload.pm"/>
+        <File Permission="644" Location="Kernel/Output/HTML/OutputFilterPostZnuny4OTRSAttachmentMultiUpload.pm"/>
     </Filelist>
 </otrs_package>

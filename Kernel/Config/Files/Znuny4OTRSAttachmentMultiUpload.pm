@@ -1,5 +1,5 @@
 # --
-# Kernel/System/Znuny4OTRSAttachmentMultiUpload.pm - allows the upload of multiple attachments at once via redefining functions
+# Kernel/Config/Files/Znuny4OTRSAttachmentMultiUpload.pm - allows the upload of multiple attachments at once via redefining functions
 # Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # Copyright (C) 2012-2015 Znuny GmbH, http://znuny.com/
 # --
@@ -9,12 +9,13 @@
 # --
 ## nofilter(TidyAll::Plugin::OTRS::Perl::PodChecker)
 
-package Kernel::System::Znuny4OTRSAttachmentMultiUpload;
-
 use strict;
 use warnings;
 
+use Kernel::System::VariableCheck qw(:all);
+
 our $ObjectManagerDisabled = 1;
+
 
 # disable redefine warnings in this scope
 {
@@ -67,12 +68,12 @@ gets file upload data.
         my $EncodeObject = $Kernel::OM->Get('Kernel::System::Encode');
 
         # get upload
-        my @Upload = $Self->{Query}->upload( $Param{Param} );
-        return if !scalar @Upload;
+        my @UploadDataload = $Self->{Query}->upload( $Param{Param} );
+        return if !scalar @UploadDataload;
 
         my $Multiple = 0;
         if (
-            scalar @Upload > 1
+            scalar @UploadDataload > 1
             && grep { $Param{Param} eq $_ } qw( file_upload FileUpload )
             )
         {

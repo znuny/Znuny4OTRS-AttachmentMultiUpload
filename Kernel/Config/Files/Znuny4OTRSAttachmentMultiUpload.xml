@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_config version="1.0" init="Application">
-    <ConfigItem Name="Ticket::CustomModule###000-Znuny4OTRSAttachmentMultiUpload" Required="1" Valid="1">
-        <Description Translatable="1">Overloads (redefines) existing functions in Kernel::System::Web::Request and Kernel::System::Web::UploadCache to allow the upload of multiple attachments at once.</Description>
-        <Group>Znuny4OTRS-AttachmentMultiUpload</Group>
-        <SubGroup>Core</SubGroup>
-        <Setting>
-            <String Regex="">Kernel::System::Znuny4OTRSAttachmentMultiUpload</String>
-        </Setting>
-    </ConfigItem>
     <ConfigItem Name="Frontend::Output::FilterElementPost###Znuny4OTRSAttachmentMultiUpload" Required="0" Valid="1">
         <Description Translatable="1">This configuration registers an OutputFilter to add multiple="multiple" to input file_upload and FileUpload fields.</Description>
         <Group>Znuny4OTRS-AttachmentMultiUpload</Group>
@@ -35,6 +27,15 @@
                         <Item Key="AgentTicketPhone">1</Item>
                         <Item Key="AgentTicketPhoneCommon">1</Item>
                         <Item Key="ProcessManagement/Article">1</Item>
+                        <Item Key="AgentTicketCompose">1</Item>
+                        <Item Key="AgentTicketActionCommon">1</Item>
+                        <Item Key="CustomerTicketMessage">1</Item>
+                        <Item Key="AgentITSMChangeAdd">1</Item>
+                        <Item Key="AgentITSMChangeEdit">1</Item>
+                        <Item Key="AgentITSMWorkOrderAdd">1</Item>
+                        <Item Key="AgentITSMWorkOrderEdit">1</Item>
+                        <Item Key="AgentITSMWorkOrderReport">1</Item>
+                        <Item Key="AgentITSMConfigItemEdit">1</Item>
                     </Hash>
                 </Item>
             </Hash>
