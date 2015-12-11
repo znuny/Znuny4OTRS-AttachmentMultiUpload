@@ -11,7 +11,7 @@
                     <Hash>
                         <Item Key="CustomerTicketMessage">1</Item>
                         <Item Key="CustomerTicketZoom">1</Item>
-                        <Item Key="AgentTicketActionCommon">1</Item>
+                        <Item Key="AdminNotificationEvent">1</Item>
                         <Item Key="AgentTicketClose">1</Item>
                         <Item Key="AgentTicketFreeText">1</Item>
                         <Item Key="AgentTicketNote">1</Item>
@@ -27,9 +27,7 @@
                         <Item Key="AgentTicketPhone">1</Item>
                         <Item Key="AgentTicketPhoneCommon">1</Item>
                         <Item Key="ProcessManagement/Article">1</Item>
-                        <Item Key="AgentTicketCompose">1</Item>
                         <Item Key="AgentTicketActionCommon">1</Item>
-                        <Item Key="CustomerTicketMessage">1</Item>
                         <Item Key="AgentITSMChangeAdd">1</Item>
                         <Item Key="AgentITSMChangeEdit">1</Item>
                         <Item Key="AgentITSMWorkOrderAdd">1</Item>
