@@ -1,9 +1,8 @@
 # --
-# Kernel/System/Web/UploadCache.pm - a fs upload cache
 # Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # Copyright (C) 2012-2015 Znuny GmbH, http://znuny.com/
 # --
-# $origin: https://github.com/OTRS/otrs/blob/e505154f2bfb3be8b817d8a02e36d7cd1aaf3420/Kernel/System/Web/UploadCache.pm
+# $origin: https://github.com/OTRS/otrs/blob/5a8c531f122fbf9019cc08e5b2965a2f2ba0e469/Kernel/System/Web/UploadCache.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -15,9 +14,18 @@ package Kernel::System::Web::UploadCache;
 use strict;
 use warnings;
 
+# ---
+# Znuny4OTRS-AttachmentMultiUpload
+# ---
+# our @ObjectDependencies = (
+#     'Kernel::Config',
+# );
+#
 our @ObjectDependencies = (
     'Kernel::Config',
+    'Kernel::System::Log',
 );
+# ---
 
 =head1 NAME
 
@@ -99,6 +107,17 @@ add a file to a Form ID
         ContentType => 'text/html',
         Disposition => 'inline', # optional
     );
+
+ContentID is optional (automatically generated if not given on disposition = inline)
+
+    $UploadCacheObject->FormIDAddFile(
+        FormID      => 12345,
+        Filename    => 'somefile.html',
+        Content     => $FileInString,
+        ContentID   => 'some_id@example.com',
+        ContentType => 'text/html',
+        Disposition => 'inline', # optional
+    );
 # ---
 # Znuny4OTRS-AttachmentMultiUpload
 # ---
@@ -130,7 +149,6 @@ Multiple files can be uploaded via the 'Multiple' paramter
 =cut
 
 sub FormIDAddFile {
-
 # ---
 # Znuny4OTRS-AttachmentMultiUpload
 # ---
@@ -158,7 +176,7 @@ sub FormIDAddFile {
             if ( !$Added ) {
                 my $AttachmentName = $Param{$UploadID}->{Filename};
 
-                $Self->{LogObject}->Log(
+                $Kernel::OM->Get('Kernel::System::Log')->Log(
                     Priority => 'error',
                     Message  => "Error while adding attachment '$AttachmentName' to form with FormID '$Param{FormID}'."
                 );
