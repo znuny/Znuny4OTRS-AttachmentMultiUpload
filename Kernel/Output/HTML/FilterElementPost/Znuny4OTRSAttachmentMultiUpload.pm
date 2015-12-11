@@ -1,5 +1,4 @@
 # --
-# Kernel/Output/HTML/FilterElementPost/Znuny4OTRSAttachmentMultiUpload.pm - adds multiple="multiple" to input file_upload and FileUpload fields
 # Copyright (C) 2012-2015 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see

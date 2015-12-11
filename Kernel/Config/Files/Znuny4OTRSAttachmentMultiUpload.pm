@@ -1,7 +1,8 @@
 # --
-# Kernel/Config/Files/Znuny4OTRSAttachmentMultiUpload.pm - allows the upload of multiple attachments at once via redefining functions
 # Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # Copyright (C) 2012-2015 Znuny GmbH, http://znuny.com/
+# --
+# $origin: https://github.com/OTRS/otrs/blob/c5081c47f459b42a1d096f24e3e85ae46416cc68/Kernel/System/Web/Request.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
