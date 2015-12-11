@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.1">
     <Name>Znuny4OTRS-AttachmentMultiUpload</Name>
-    <Version>1.1.5</Version>
+    <Version>1.2.1</Version>
+    <ChangeLog Version="1.2.1" Date="2015-12-11 18:07:08 UTC">Ported to OTRS 5.</ChangeLog>
     <ChangeLog Version="1.1.5" Date="2015-10-20 12:00:01 UTC">Added ITSM support.</ChangeLog>
     <ChangeLog Version="1.1.4" Date="2015-08-20 10:14:14 UTC">Fixed bug: added missing templates.</ChangeLog>
     <ChangeLog Version="1.1.3" Date="2015-07-27 08:23:19 UTC">Fixed bug: Missing copyright.</ChangeLog>
