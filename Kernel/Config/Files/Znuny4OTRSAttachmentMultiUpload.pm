@@ -3,6 +3,8 @@
 # Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # Copyright (C) 2012-2015 Znuny GmbH, http://znuny.com/
 # --
+# $origin: https://github.com/OTRS/otrs/blob/74281ba497c6f9cf205c306b595e7703bd6a4a54/Kernel/System/Web/Request.pm
+# --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
