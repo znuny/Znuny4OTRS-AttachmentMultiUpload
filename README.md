@@ -2,13 +2,13 @@
 
 Attachment Multi Upload
 =================
-With this extention you will be able to upload multiple attachments at once when using a modern HTML5 browser.
+With this extension you will be able to upload multiple attachments at once when using a modern HTML5 browser.
 
 **Prerequisites**
 
 - [Znuny4OTRS-Repo](http://znuny.com/#!/znuny4otrs)
 
-- OTRS 5.0
+- OTRS 5
 
 **Installation**
 
@@ -30,4 +30,4 @@ Enjoy!
 
  Your Znuny Team!
 
- [http://znuny.com](http://znuny.com)
+ [http://znuny.com](http://znuny.com/)
