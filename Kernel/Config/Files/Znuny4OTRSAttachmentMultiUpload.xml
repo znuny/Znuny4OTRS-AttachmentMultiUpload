@@ -6,7 +6,7 @@
         <SubGroup>Core::Web</SubGroup>
         <Setting>
             <Hash>
-                <Item Key="Module">Kernel::Output::HTML::OutputFilterPostZnuny4OTRSAttachmentMultiUpload</Item>
+                <Item Key="Module">Kernel::Output::HTML::FilterElementPost::Znuny4OTRSAttachmentMultiUpload</Item>
                 <Item Key="Templates">
                     <Hash>
                         <Item Key="CustomerTicketMessage">1</Item>

@@ -1,5 +1,5 @@
 # --
-# Kernel/Output/HTML/OutputFilterPostZnuny4OTRSAttachmentMultiUpload.pm - adds multiple="multiple" to input file_upload and FileUpload fields
+# Kernel/Output/HTML/FilterElementPost/Znuny4OTRSAttachmentMultiUpload.pm - adds multiple="multiple" to input file_upload and FileUpload fields
 # Copyright (C) 2012-2015 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -7,7 +7,7 @@
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
-package Kernel::Output::HTML::OutputFilterPostZnuny4OTRSAttachmentMultiUpload;
+package Kernel::Output::HTML::FilterElementPost::Znuny4OTRSAttachmentMultiUpload;
 
 use strict;
 use warnings;
