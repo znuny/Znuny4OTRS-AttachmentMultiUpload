@@ -13,6 +13,7 @@ With this extension you will be able to upload multiple attachments at once when
 **Installation**
 
 Download the package and install it via admin interface -> package manager or use Znuny4OTRS-Repo.
+You need to restart the webserver after the installation.
 
 **Configuration**
 
