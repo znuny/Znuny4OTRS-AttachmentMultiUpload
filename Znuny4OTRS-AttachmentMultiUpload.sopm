@@ -2,6 +2,7 @@
 <otrs_package version="1.1">
     <Name>Znuny4OTRS-AttachmentMultiUpload</Name>
     <Version>4.0.0</Version>
+    <ChangeLog Version="4.0.0" Date="2017-07-20 09:52:41 +0200">Small improvements.</ChangeLog>
     <ChangeLog Version="4.0.0" Date="2017-07-20 09:52:05 +0200">Small improvements.</ChangeLog>
     <ChangeLog Version="4.0.0" Date="2017-07-20 09:50:17 +0200">Small improvements.</ChangeLog>
     <ChangeLog Version="1.1.6" Date="2015-12-11 18:05:15 UTC">- Cleaned up template list.&#13;
