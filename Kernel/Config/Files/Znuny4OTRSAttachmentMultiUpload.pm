@@ -1,12 +1,13 @@
+# VERSION:1.1
 # --
-# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
-# Copyright (C) 2012-2015 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
+# Copyright (C) 2012-2018 Znuny GmbH, http://znuny.com/
 # --
-# $origin: https://github.com/OTRS/otrs/blob/c5081c47f459b42a1d096f24e3e85ae46416cc68/Kernel/System/Web/Request.pm
+# $origin: otrs - c5081c47f459b42a1d096f24e3e85ae46416cc68 - Kernel/System/Web/Request.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (AGPL). If you
-# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
+# the enclosed file COPYING for license information (GPL). If you
+# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
 ## nofilter(TidyAll::Plugin::OTRS::Perl::PodChecker)
 
@@ -17,6 +18,11 @@ use Kernel::System::VariableCheck qw(:all);
 
 our $ObjectManagerDisabled = 1;
 
+sub Load {
+    my ($File, $Self) = @_;
+
+    return 1;
+}
 
 # disable redefine warnings in this scope
 {
