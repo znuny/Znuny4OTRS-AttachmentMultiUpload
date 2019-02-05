@@ -1,4 +1,5 @@
-image: registry.znuny.com/znuny/docker-otrs3ci:latest
+image: registry.znuny.com/znuny/docker-otrs4ci:latest
+## nofilter(TidyAll::Plugin::OTRS::Znuny4OTRS::Gitlabci::Image)
 
 stages:
   - deploy
