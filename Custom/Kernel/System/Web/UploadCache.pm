@@ -1,10 +1,12 @@
 # --
-# Kernel/System/Web/UploadCache.pm - a fs upload cache
-# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
+# Copyright (C) 2012-2019 Znuny GmbH, http://znuny.com/
+# --
+# $origin: otrs - 0000000000000000000000000000000000000000 - Kernel/System/Web/UploadCache.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (AGPL). If you
-# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
+# the enclosed file COPYING for license information (GPL). If you
+# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
 
 package Kernel::System::Web::UploadCache;
@@ -168,13 +170,15 @@ Multiple files can be uploaded via the 'Multiple' paramter
     );
 # ---
 =cut
+
 sub FormIDAddFile {
+
 # ---
-# Znuny4OTRS-AttachmentMultiUpload
+    # Znuny4OTRS-AttachmentMultiUpload
 # ---
-#    my $Self = shift;
-#
-#    return $Self->{Backend}->FormIDAddFile(@_);
+    #    my $Self = shift;
+    #
+    #    return $Self->{Backend}->FormIDAddFile(@_);
     my ( $Self, %Param ) = @_;
 
     # fallback behavior if no 'Multiple' parameter is given
@@ -186,15 +190,15 @@ sub FormIDAddFile {
         # otherwise we got a multi upload so we need to check
         # how many files were uploaded and loop over each of them
         # to add it to the form
-        for my $UploadID ( 1..$Param{Multiple} ) {
+        for my $UploadID ( 1 .. $Param{Multiple} ) {
             my $Added = $Self->{Backend}->FormIDAddFile(
                 FormID => $Param{FormID},
-                %{ $Param{ $UploadID } },
+                %{ $Param{$UploadID} },
             );
 
             # in case of an error, log it but keep loading files up
             if ( !$Added ) {
-                my $AttachmentName = $Param{ $UploadID }->{Filename};
+                my $AttachmentName = $Param{$UploadID}->{Filename};
 
                 $Self->{LogObject}->Log(
                     Priority => 'error',
@@ -205,6 +209,7 @@ sub FormIDAddFile {
 
         return 1;
     }
+
 # ---
 }
 
@@ -285,10 +290,10 @@ sub FormIDCleanUp {
 
 =head1 TERMS AND CONDITIONS
 
-This software is part of the OTRS project (L<http://otrs.org/>).
+This software is part of the OTRS project (L<https://otrs.org/>).
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
-the enclosed file COPYING for license information (AGPL). If you
-did not receive this file, see L<http://www.gnu.org/licenses/agpl.txt>.
+the enclosed file COPYING for license information (GPL). If you
+did not receive this file, see L<https://www.gnu.org/licenses/gpl-3.0.txt>.
 
 =cut
