@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.1">
     <Name>Znuny4OTRS-AttachmentMultiUpload</Name>
-    <Version>1.0.5</Version>
+    <Version>3.0.6</Version>
     <Framework>3.1.x</Framework>
     <Framework>3.2.x</Framework>
     <Framework>3.3.x</Framework>
@@ -11,6 +11,7 @@
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">This package adds the functionality to upload multiple attachments at once when using a modern HTML5 browser.</Description>
     <Description Lang="de">Dieses Paket fügt die Funktionalität hinzu um mehrere Anhänge gleichzeitig hochzuladen, wenn ein morderner HTML5 Browser verwendet wird.</Description>
+    <ChangeLog Version="3.0.6" Date="2019-02-05 16:50:26 +0100">OTRS 3 Version</ChangeLog>
     <ChangeLog Version="1.0.5" Date="2019-02-05 16:49:34 +0100">Header update and tidied code.</ChangeLog>
     <ChangeLog Version="1.0.4" Date="2016-03-10 20:10:33 UTC">Fixed bug: Missing copyright.</ChangeLog>
     <Filelist>
