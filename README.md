@@ -1,4 +1,4 @@
-![Znuny logo](http://znuny.com/assets/logo_small.png)
+![Znuny logo](http://znuny.com/assets/images/logo_small.png)
 
 Attachment Multi Upload
 =================
@@ -17,6 +17,7 @@ With this extention you will be able to upload multiple attachments at once when
 **Installation**
 
 Download the package and install it via admin interface -> package manager or use Znuny4OTRS-Repo.
+You need to restart the webserver after the installation.
 
 **Configuration**
 
