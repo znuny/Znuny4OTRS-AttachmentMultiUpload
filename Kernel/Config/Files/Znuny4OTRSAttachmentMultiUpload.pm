@@ -11,8 +11,12 @@
 # --
 ## nofilter(TidyAll::Plugin::OTRS::Perl::PodChecker)
 
+package Kernel::Config::Files::Znuny4OTRSAttachmentMultiUpload;
+
 use strict;
 use warnings;
+
+use Kernel::System::Web::Request;
 
 use Kernel::System::VariableCheck qw(:all);
 
