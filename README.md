@@ -1,19 +1,22 @@
-![Znuny logo](http://znuny.com/assets/images/logo_small.png)
+![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
+
+
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-AttachmentMultiUpload/master)
 
 Attachment Multi Upload
 =================
-With this extension you will be able to upload multiple attachments at once when using a modern HTML5 browser.
+This feature add-on adds the possibility to upload multiple attachments at once when using a modern HTML5 browser.
+
+*A version for OTRS 6 does not exist, there is a similar built-in feature.*
 
 **Prerequisites**
 
-- [Znuny4OTRS-Repo](http://znuny.com/#!/znuny4otrs)
-
 - OTRS 5
+- [Znuny4OTRS-Repo](https://www.znuny.com/add-ons/znuny4otrs-repository)
 
 **Installation**
 
-Download the package and install it via admin interface -> package manager or use Znuny4OTRS-Repo.
-You need to restart the webserver after the installation.
+Download the [package](https://addons.znuny.com/api/addon_repos/public/665/latest) and install it via admin interface -> package manager or use [Znuny4OTRS-Repo](https://www.znuny.com/add-ons/znuny4otrs-repository).
 
 **Configuration**
 
@@ -21,14 +24,14 @@ No further configuration required.
 
 **Download**
 
-For download see [http://znuny.com/en/#!/addons](http://znuny.com/en/#!/addons)
+Download the [latest version](https://addons.znuny.com/api/addon_repos/public/665/latest).
 
 **Commercial Support**
 
-For this extension and for OTRS in general visit [http://znuny.com](http://znuny.com). Looking forward to hear from you!
+For this add-on and for OTRS in general visit [https://www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
 
 Enjoy!
 
- Your Znuny Team!
+Your Znuny Team!
 
- [http://znuny.com](http://znuny.com/)
+[https://www.znuny.com](https://www.znuny.com)

@@ -1,6 +1,6 @@
 # --
-# Copyright (C) 2001-2019 OTRS AG, https://otrs.com/
-# Copyright (C) 2012-2019 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2012-2020 Znuny GmbH, http://znuny.com/
 # --
 # $origin: otrs - 5a8c531f122fbf9019cc08e5b2965a2f2ba0e469 - Kernel/System/Web/UploadCache.pm
 # --
