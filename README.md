@@ -11,7 +11,7 @@ This feature add-on adds the possibility to upload multiple attachments at once 
 
 **Prerequisites**
 
-- OTRS 5
+- ((OTRS)) Community Edition 5 or OTRS 5
 - [Znuny4OTRS-Repo](https://www.znuny.com/add-ons/znuny4otrs-repository)
 
 **Installation**
@@ -28,7 +28,7 @@ Download the [latest version](https://addons.znuny.com/api/addon_repos/public/66
 
 **Commercial Support**
 
-For this add-on and for OTRS in general visit [https://www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
+For this add-on and for Znuny in general visit [https://www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
 
 Enjoy!
 
